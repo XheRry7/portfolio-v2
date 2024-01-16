@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.arrow-buttons svg {
+  @apply opacity-0 -ml-2;
+  transition: all 0.5s;
+}
+.arrow-buttons:hover svg {
+  @apply opacity-100 ml-2;
+}
+
+.animate-gradient {
+  background-size: 500% 500%;
+  animation: GradientAnimation 8s ease infinite;
+  -webkit-animation: GradientAnimation 8s ease infinite;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.video-play-btn-sm::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+  @apply bg-red-300  w-12 h-12;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.wistia_click_to_play{
+  @apply w-fit flex items-center
+}
