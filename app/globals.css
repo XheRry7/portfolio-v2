@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.arrow-buttons svg {
+  margin-left: -8px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.arrow-buttons:hover svg {
+  margin-left: 5px;
+  opacity: 1;
+}
+
+.animate-gradient {
+  animation: GradientAnimation 10s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: #fff;
+  color: #111827;
+}
