@@ -7,6 +7,8 @@ const experiences = [
     role: "Software Engineer",
     period: "May 2025 – present",
     highlights: [
+      "Architected and shipped DivaOS, an AI-powered WhatsApp virtual assistant on n8n + OpenAI — intent routing, structured extraction, multilingual flows, and CRM automation for brokers.",
+      "Leverage AI daily in engineering workflows (design exploration, code acceleration, and production LLM integrations) to deliver faster without trading off reliability.",
       "Boosted performance of the property instant valuation system by 80%, reducing PDF generation time and improving user experience.",
       "Collaborated with external partners (Mortgage Finder, Liana, Property Monitor) to integrate tools including mortgage calculators, email marketing systems, and instant valuation flows.",
       "Partnered with internal teams (marketing, sales, listings, CRM) to gather requirements and deliver solutions aligned with business objectives.",
@@ -24,14 +26,14 @@ const experiences = [
     role: "Software Developer (Contractor)",
     period: "August 2024 – May 2025",
     highlights: [
+      "Full-stack delivery on a microservices-based, multi-tenant ERP platform — shared packages, RBAC, CRM, listings, and photo/media request workflows with React, Node, TypeScript, Fastify, and PostgreSQL on AWS.",
+      "Built and evolved the listings module within CRM, including portal syndication integrations with Bayut, Dubizzle, and Property Finder.",
+      "Owned photo request and media request modules end-to-end, including S3-backed media handling and operational workflows for listing assets.",
       "Developed and implemented a comprehensive accounting module for financial management, including automated generation of income and expense statements, customer balance sheets, and vendor balance sheets.",
       "Built and integrated financial modules such as invoices, bills, credit notes, debit notes, and payment processing to enhance system functionality and user experience.",
-      "Engineered backend solutions for client applications, delivering seamless integration with front-end systems and ensuring robust, user-friendly functionality.",
       "Contributed to the development of a high-performance, scalable classifieds platform, catering to both B2B and B2C use cases.",
       "Designed and implemented filtering mechanisms for product listings to support complex query combinations (categories, subcategories, attributes).",
       "Built dynamic form generation for category-specific listing fields with validation and localization support.",
-      "Collaborated with the team on efficient query planning, load testing, and caching strategies.",
-      "Enhanced ERP systems by optimizing the accounting module to streamline financial workflows, improve data accuracy, and increase system reliability.",
       "Resolved performance issues through database query optimizations, caching strategies, and asynchronous processing to improve application responsiveness.",
     ],
   },
@@ -58,7 +60,7 @@ const experiences = [
     role: "Software Engineer",
     period: "1 Sep 2020 – 5 Jan 2024",
     highlights: [
-      "Collaborated with a diverse range of clients based in the United States, engaging in various projects across different tech stacks.",
+      "Delivered full-stack features for US-based products across React, Node, GraphQL, and MongoDB/PostgreSQL stacks.",
       "Collaborated with UX/UI designers to implement visually appealing and intuitive user interfaces.",
       "Integrated third-party APIs and services (e.g., payment gateways) to enhance application features and functionality.",
       "Diagnosed and resolved bugs, improving the overall functionality and performance of web applications.",
@@ -80,7 +82,8 @@ export function ExperienceSection() {
           Professional experience
         </h2>
         <p className="mb-12 text-center text-base text-gray-600">
-          Real estate platforms, ERP, classifieds, and US client delivery.
+          Senior full-stack delivery across real estate platforms, multi-tenant
+          ERP, AI assistants, and US client products.
         </p>
         <div className="space-y-12">
           {experiences.map((job) => (

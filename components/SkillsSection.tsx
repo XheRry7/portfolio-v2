@@ -1,61 +1,74 @@
 const groups: { title: string; subtitle?: string; items: string[] }[] = [
   {
-    title: "Development",
+    title: "Core engineering",
     items: [
-      "HTML5",
-      "CSS (incl. SCSS)",
+      "TypeScript",
       "JavaScript",
       "React.js",
       "Next.js",
-      "Nest.js",
-      "Node.js",
-      "n8n",
-      "MongoDB",
-      "Express.js",
-      "PHP",
-    ],
-  },
-  {
-    title: "Moderate development skills",
-    items: [
-      "TypeScript",
-      "PostgreSQL",
-      "GraphQL",
-      "AWS",
-      "Vercel",
-      "Redux",
-      "SQL",
-      "React Native",
-      "Python"
-    ],
-  },
-  {
-    title: "Frameworks & UI",
-    items: [
-      "AngularJS",
-      "PHP Laravel",
       "Vue.js",
-      "Material UI",
-      "Tailwind CSS",
-      "Chakra UI",
-      "Bootstrap",
+      "Node.js",
+      "Nest.js",
+      "Fastify",
+      "Express.js",
+      "GraphQL",
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
     ],
   },
   {
-    title: "CMS",
-    items: ["WordPress", "Contentful", "Shopify", "Sanity"],
+    title: "Architecture & platforms",
+    items: [
+      "Microservices",
+      "Multi-tenant systems",
+      "RBAC",
+      "Shared packages / monorepos",
+      "REST APIs",
+      "AWS EC2",
+      "AWS S3",
+      "Docker",
+      "Vercel",
+      "Nx",
+    ],
   },
   {
-    title: "AI & automation (DivaOS / chatbot)",
+    title: "AI engineering & integration",
     subtitle:
-      "WhatsApp assistant work — complements the stack above for conversational products.",
+      "Production LLM products and AI-accelerated delivery — from WhatsApp assistants to day-to-day engineering leverage.",
     items: [
       "OpenAI / LLMs",
-      "n8n",
+      "n8n automation",
       "Intent routing & structured extraction",
-      "Redis (sessions & concurrency)",
-      "WhatsApp Business APIs",
+      "AI-assisted development",
+      "Conversational / WhatsApp agents",
       "Voice & multilingual flows",
+      "Prompt & workflow design",
+    ],
+  },
+  {
+    title: "Frontend & UI",
+    items: [
+      "HTML5",
+      "CSS / SCSS",
+      "Tailwind CSS",
+      "Material UI",
+      "Chakra UI",
+      "Bootstrap",
+      "Redux",
+    ],
+  },
+  {
+    title: "Backend & CMS",
+    items: [
+      "PHP Laravel",
+      "Prisma",
+      "TypeORM",
+      "WordPress",
+      "Contentful",
+      "Shopify",
+      "Sanity",
     ],
   },
   {
@@ -63,11 +76,11 @@ const groups: { title: string; subtitle?: string; items: string[] }[] = [
     items: [
       "Git",
       "GitHub",
-      "Docker",
       "Bitbucket",
       "Jira",
       "Monday.com",
       "Slack",
+      "Jenkins",
     ],
   },
 ];
@@ -93,15 +106,15 @@ export function SkillsSection() {
           Technical skills
         </h2>
         <p className="mx-auto mb-10 max-w-2xl text-center text-base text-gray-600">
-          Have a look at my{" "}
+          Senior full-stack toolkit with a strong focus on AI integration and
+          production systems — see the{" "}
           <a
             href="#portfolio"
             className="font-semibold text-indigo-600 underline"
           >
             portfolio
           </a>{" "}
-          for how this shows up in real projects — from full-stack web to AI
-          assistants.
+          for how this shows up in real projects.
         </p>
         <div className="space-y-10">
           {groups.map((g) => (

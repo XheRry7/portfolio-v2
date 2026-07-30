@@ -5,9 +5,9 @@ import "aos/dist/aos.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shehryar Ahmed | Software Engineer",
+  title: "Shehryar Ahmed | Senior Software Engineer",
   description:
-    "Software engineer in Dubai — React, Next.js, Node, Nest, Laravel, GraphQL, PostgreSQL, and AI-powered WhatsApp automation (DivaOS).",
+    "Senior software engineer in Dubai — full-stack systems, AI integration, multi-tenant ERP, and production platforms with React, Next.js, Node, TypeScript, and PostgreSQL.",
 };
 
 export default function RootLayout({

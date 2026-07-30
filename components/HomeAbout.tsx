@@ -17,7 +17,12 @@ export function HomeAbout() {
               <span className="border-b-8 border-indigo-400">Shehryar Ahmed</span>
             </p>
             <p className="mt-5 text-lg font-semibold text-gray-800 lg:text-xl">
-              Software Engineer
+              Senior Software Engineer
+            </p>
+            <p className="mt-2 max-w-lg text-sm leading-relaxed text-gray-600 sm:text-base">
+              Full-stack systems, AI integration, and production platforms —
+              shipping reliable software with modern tooling and LLM-powered
+              workflows.
             </p>
             <div className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-gray-600 sm:text-base">
               <a href="tel:+971552803671" className="hover:text-indigo-700">
@@ -96,24 +101,32 @@ export function HomeAbout() {
             Shehryar Ahmed
           </p>
           <p className="mt-2 mb-4 text-base font-semibold leading-5 text-gray-700">
-            <span className="text-indigo-700">Software Engineer</span> —
+            <span className="text-indigo-700">Senior Software Engineer</span> —
             Dubai, UAE
           </p>
           <h3 className="mb-2 text-lg font-bold text-gray-800">
             Professional summary
           </h3>
           <p className="mb-3 text-base leading-relaxed text-gray-700">
-            Experienced <strong>Software Engineer</strong> with{" "}
-            <strong>5+ years</strong> building visually appealing, functional
-            web products. Skilled in{" "}
+            <strong>Senior Software Engineer</strong> with{" "}
+            <strong>5+ years</strong> designing and shipping full-stack products
+            across real estate, ERP, and SaaS. I own features end-to-end —
+            architecture, APIs, data models, and polished front ends — and
+            actively <strong>leverage AI in day-to-day engineering</strong>{" "}
+            (LLM integrations, workflow automation, and AI-assisted development)
+            to move faster without sacrificing quality.
+          </p>
+          <p className="mb-3 text-base leading-relaxed text-gray-700">
+            Strong across{" "}
             <strong>
-              HTML, CSS, Tailwind CSS, JavaScript, React, Vue.js, Next.js, Node,
-              Nest, TypeScript, GraphQL
+              React, Next.js, Vue, Node, Nest, Fastify, TypeScript, GraphQL
             </strong>
-            , <strong>MongoDB, PostgreSQL, MySQL</strong>,{" "}
-            <strong>WordPress</strong>, <strong>PHP Laravel</strong>, and{" "}
-            <strong>API integrations</strong> with a track record of shipping
-            interfaces and backends that hold up in production.
+            , and{" "}
+            <strong>PostgreSQL / MySQL / MongoDB</strong>, with production
+            experience in multi-tenant systems, RBAC, shared packages, AWS
+            (EC2, S3), and portal integrations. Comfortable leading module
+            delivery in complex domains like CRM, listings, and media
+            workflows.
           </p>
           <p className="mb-2 text-base font-medium text-gray-800">
             Current location: <span className="text-indigo-700">Dubai</span>
@@ -123,14 +136,14 @@ export function HomeAbout() {
             <a href="#skills" className="font-semibold text-indigo-600 underline">
               technical skills
             </a>{" "}
-            section for the software engineering breakdown and the{" "}
+            section for the stack breakdown and the{" "}
             <a
               href="#portfolio"
               className="font-semibold text-indigo-600 underline"
             >
               projects
             </a>{" "}
-            for case studies.
+            for case studies — including AI assistants and multi-tenant ERP.
           </p>
 
           <h3 className="mb-2 text-lg font-bold text-gray-800">

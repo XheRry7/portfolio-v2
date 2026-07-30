@@ -139,34 +139,60 @@ export function PortfolioAndFooter() {
           Projects
         </h2>
         <p className="mx-auto mb-10 max-w-3xl text-center text-base leading-relaxed text-gray-600">
-          Full-stack delivery for real estate, ERP, classifieds, US-based
-          products (via Cloudtek), plus an AI-powered WhatsApp assistant
-          (DivaOS).
+          Senior full-stack work across multi-tenant ERP, AI-powered assistants,
+          real estate platforms, classifieds, and US-based products — with a
+          focus on systems that scale and integrate cleanly.
         </p>
 
         <div className="mb-10 space-y-8 text-base leading-relaxed">
           <ProjectCard>
-            <ProjectTitle>DivaOS — WhatsApp virtual assistant</ProjectTitle>
+            <ProjectTitle>
+              Multi-tenant ERP — CRM, listings & media workflows
+            </ProjectTitle>
+            <DescRow>
+              Full-stack development on a <strong>microservices-based, multi-tenant
+              ERP</strong> platform with shared packages and role-based access
+              control (RBAC). Owned work inside the CRM surface: the{" "}
+              <strong>listings module</strong>, plus{" "}
+              <strong>photo request</strong> and <strong>media request</strong>{" "}
+              flows for operational media handling. Integrated top UAE property
+              portals — <strong>Bayut</strong>, <strong>Dubizzle</strong>, and{" "}
+              <strong>Property Finder</strong> — for listing syndication and
+              distribution. Built for a proper ERP footprint: tenancy isolation,
+              reusable packages across services, and production media storage on
+              S3.
+            </DescRow>
+            <TechRow>
+              React, Node.js, TypeScript, PostgreSQL, Fastify, AWS S3, AWS EC2,
+              RBAC, shared packages
+            </TechRow>
+          </ProjectCard>
+
+          <ProjectCard>
+            <ProjectTitle>DivaOS — AI WhatsApp virtual assistant</ProjectTitle>
             <DescRow>
               Architected and built DivaOS on <strong>n8n</strong>, orchestrating{" "}
               <strong>OpenAI</strong>, <strong>Redis</strong>, and internal REST
               APIs to automate broker workflows end-to-end: LLM-driven intent
-              routing and structured filter extraction for listings search, CRM 
+              routing and structured filter extraction for listings search, CRM
               actions, scheduling, and document delivery; multilingual experience
               (English/Arabic) with language detection and rich WhatsApp UI; voice
               message pipeline (retrieval, transcription, quality checks);
               Redis-backed sessions with per-user locks for concurrent messages;
               listings enrichment (floor plans, payment plans, brochures); CRM
               (leads, clients, opportunities); calendar workflows; and market
-              analysis intents with clear fallbacks.
+              analysis intents with clear fallbacks. A concrete example of{" "}
+              <strong>AI integration in production</strong>, not just prototyping.
             </DescRow>
             <TechRow>
-              n8n, OpenAI, Redis, REST APIs, WhatsApp, Node ecosystem
+              n8n, OpenAI / LLMs, Redis, REST APIs, WhatsApp, Node ecosystem
             </TechRow>
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectTitle>Driven Properties — corporate website & listings</ProjectTitle>
+            <ProjectTitle>
+              Driven Properties — corporate website & listings
+            </ProjectTitle>
             <DescRow>
               Contributed to the Driven Properties website with a focus on the
               property listings module: improved listing structure for dynamic
@@ -273,35 +299,6 @@ export function PortfolioAndFooter() {
           </ProjectCard>
         </div>
 
-        <h3 className="mb-4 text-center text-2xl font-semibold text-gray-800">
-          Work gallery
-        </h3>
-        <p className="mb-4 text-center text-base text-gray-600">
-          Visual snapshots from earlier freelance and product UI work.
-        </p>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
-          <div className="overflow-hidden rounded-lg border shadow-md">
-            <img
-              className="h-full max-w-full scale-105 rounded-lg"
-              src="/images/gazelle-flex.gif"
-              alt="Gazelle Flex preview"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg border shadow-md">
-            <img
-              className="h-auto max-w-full scale-105 rounded-lg"
-              src="/images/alljobs.gif"
-              alt="All Jobs preview"
-            />
-          </div>
-          <div className="overflow-hidden rounded-lg border shadow-md">
-            <img
-              className="h-auto max-w-full scale-105 rounded-lg"
-              src="/images/extension.gif"
-              alt="Browser extension preview"
-            />
-          </div>
-        </div>
       </section>
 
       <AwardsSection />
