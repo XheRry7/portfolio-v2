@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader />
-      <main>
+      <main className="w-full max-w-full overflow-x-hidden">
         <HomeAbout />
         <ExperienceSection />
         <SkillsSection />

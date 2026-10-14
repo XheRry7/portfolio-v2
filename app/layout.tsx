@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Shehryar Ahmed | Senior Software Engineer",
   description:
-    "Senior software engineer in Dubai — full-stack systems, AI integration, multi-tenant ERP, and production platforms with React, Next.js, Node, TypeScript, and PostgreSQL.",
+    "Senior software engineer in Dubai: full-stack systems, RAG / AI applications, multi-tenant ERP, and production platforms with React, Next.js, Node, TypeScript, FastAPI, and PostgreSQL.",
 };
 
 export default function RootLayout({
@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body className="min-h-full text-2xl text-gray-900 antialiased sm:text-2xl md:text-2xl lg:text-lg xl:text-lg">
+    <html lang="en" className="h-full overflow-x-hidden">
+      <body className="min-h-full max-w-full overflow-x-hidden text-base text-gray-900 antialiased sm:text-lg lg:text-lg">
         <AosInit />
         {children}
         <Script

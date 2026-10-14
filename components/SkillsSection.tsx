@@ -10,9 +10,12 @@ const groups: { title: string; subtitle?: string; items: string[] }[] = [
       "Node.js",
       "Nest.js",
       "Fastify",
+      "FastAPI",
       "Express.js",
+      "Python",
       "GraphQL",
       "PostgreSQL",
+      "pgvector",
       "MySQL",
       "MongoDB",
       "Redis",
@@ -26,6 +29,7 @@ const groups: { title: string; subtitle?: string; items: string[] }[] = [
       "RBAC",
       "Shared packages / monorepos",
       "REST APIs",
+      "JWT auth",
       "AWS EC2",
       "AWS S3",
       "Docker",
@@ -36,15 +40,19 @@ const groups: { title: string; subtitle?: string; items: string[] }[] = [
   {
     title: "AI engineering & integration",
     subtitle:
-      "Production LLM products and AI-accelerated delivery — from WhatsApp assistants to day-to-day engineering leverage.",
+      "Production LLM products and AI-accelerated delivery, from RAG knowledge assistants and WhatsApp agents to day-to-day engineering leverage.",
     items: [
       "OpenAI / LLMs",
+      "RAG (retrieval-augmented generation)",
+      "Hybrid search & reranking",
+      "pgvector embeddings",
       "n8n automation",
       "Intent routing & structured extraction",
       "AI-assisted development",
       "Conversational / WhatsApp agents",
       "Voice & multilingual flows",
       "Prompt & workflow design",
+      "SSE streaming chat",
     ],
   },
   {
@@ -65,6 +73,9 @@ const groups: { title: string; subtitle?: string; items: string[] }[] = [
       "PHP Laravel",
       "Prisma",
       "TypeORM",
+      "SQLAlchemy",
+      "Alembic",
+      "Vite",
       "WordPress",
       "Contentful",
       "Shopify",
@@ -98,7 +109,7 @@ export function SkillsSection() {
     <section
       id="skills"
       className="flex flex-col items-center justify-center px-4 py-16 lg:min-h-0 lg:py-20"
-      data-aos="fade-right"
+      data-aos="fade-up"
       data-aos-duration="1000"
     >
       <div className="w-full max-w-5xl">
@@ -107,7 +118,7 @@ export function SkillsSection() {
         </h2>
         <p className="mx-auto mb-10 max-w-2xl text-center text-base text-gray-600">
           Senior full-stack toolkit with a strong focus on AI integration and
-          production systems — see the{" "}
+          production systems. See the{" "}
           <a
             href="#portfolio"
             className="font-semibold text-indigo-600 underline"

@@ -5,7 +5,11 @@ import AOS from "aos";
 
 export function AosInit() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+      offset: 40,
+      disable: "phone",
+    });
   }, []);
   return null;
 }

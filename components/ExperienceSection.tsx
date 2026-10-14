@@ -7,7 +7,7 @@ const experiences = [
     role: "Software Engineer",
     period: "May 2025 – present",
     highlights: [
-      "Architected and shipped DivaOS, an AI-powered WhatsApp virtual assistant on n8n + OpenAI — intent routing, structured extraction, multilingual flows, and CRM automation for brokers.",
+      "Architected and shipped DivaOS, an AI-powered WhatsApp virtual assistant on n8n + OpenAI: intent routing, structured extraction, multilingual flows, and CRM automation for brokers.",
       "Leverage AI daily in engineering workflows (design exploration, code acceleration, and production LLM integrations) to deliver faster without trading off reliability.",
       "Boosted performance of the property instant valuation system by 80%, reducing PDF generation time and improving user experience.",
       "Collaborated with external partners (Mortgage Finder, Liana, Property Monitor) to integrate tools including mortgage calculators, email marketing systems, and instant valuation flows.",
@@ -26,7 +26,7 @@ const experiences = [
     role: "Software Developer (Contractor)",
     period: "August 2024 – May 2025",
     highlights: [
-      "Full-stack delivery on a microservices-based, multi-tenant ERP platform — shared packages, RBAC, CRM, listings, and photo/media request workflows with React, Node, TypeScript, Fastify, and PostgreSQL on AWS.",
+      "Full-stack delivery on a microservices-based, multi-tenant ERP platform: shared packages, RBAC, CRM, listings, and photo/media request workflows with React, Node, TypeScript, Fastify, and PostgreSQL on AWS.",
       "Built and evolved the listings module within CRM, including portal syndication integrations with Bayut, Dubizzle, and Property Finder.",
       "Owned photo request and media request modules end-to-end, including S3-backed media handling and operational workflows for listing assets.",
       "Developed and implemented a comprehensive accounting module for financial management, including automated generation of income and expense statements, customer balance sheets, and vendor balance sheets.",

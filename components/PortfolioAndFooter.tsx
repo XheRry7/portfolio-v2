@@ -139,15 +139,39 @@ export function PortfolioAndFooter() {
           Projects
         </h2>
         <p className="mx-auto mb-10 max-w-3xl text-center text-base leading-relaxed text-gray-600">
-          Senior full-stack work across multi-tenant ERP, AI-powered assistants,
-          real estate platforms, classifieds, and US-based products — with a
+          Senior full-stack work across multi-tenant ERP, RAG / AI applications,
+          real estate platforms, classifieds, and US-based products, with a
           focus on systems that scale and integrate cleanly.
         </p>
 
         <div className="mb-10 space-y-8 text-base leading-relaxed">
           <ProjectCard>
+            <ProjectTitle>Ilmora: RAG knowledge assistant</ProjectTitle>
+            <DescRow>
+              Internal company knowledge assistant that turns company documents
+              into a searchable, chat-based Q&amp;A system. Admins upload
+              policies and guides (PDF, Word, Excel); the app parses and chunks
+              them with structure-aware ingestion, embeds sections into{" "}
+              <strong>PostgreSQL with pgvector</strong>, and retrieves the most
+              relevant passages via <strong>hybrid vector + keyword search</strong>{" "}
+              with RRF, glossary expansion, and local cross-encoder reranking. An
+              LLM then <strong>streams a cited answer</strong> so replies stay
+              tied to the source material, not generic web knowledge. Includes
+              JWT auth and admin tooling, ChatGPT-style React UI with
+              conversation history, voice input, citations and source
+              highlighting, feedback/analytics, and Docker-based production
+              deployment.
+            </DescRow>
+            <TechRow>
+              Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, pgvector, OpenAI
+              API, RAG, hybrid search, React, TypeScript, Vite, Docker, JWT auth,
+              SSE streaming
+            </TechRow>
+          </ProjectCard>
+
+          <ProjectCard>
             <ProjectTitle>
-              Multi-tenant ERP — CRM, listings & media workflows
+              Multi-tenant ERP: CRM, listings & media workflows
             </ProjectTitle>
             <DescRow>
               Full-stack development on a <strong>microservices-based, multi-tenant
@@ -156,8 +180,8 @@ export function PortfolioAndFooter() {
               <strong>listings module</strong>, plus{" "}
               <strong>photo request</strong> and <strong>media request</strong>{" "}
               flows for operational media handling. Integrated top UAE property
-              portals — <strong>Bayut</strong>, <strong>Dubizzle</strong>, and{" "}
-              <strong>Property Finder</strong> — for listing syndication and
+              portals (<strong>Bayut</strong>, <strong>Dubizzle</strong>, and{" "}
+              <strong>Property Finder</strong>) for listing syndication and
               distribution. Built for a proper ERP footprint: tenancy isolation,
               reusable packages across services, and production media storage on
               S3.
@@ -169,7 +193,7 @@ export function PortfolioAndFooter() {
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectTitle>DivaOS — AI WhatsApp virtual assistant</ProjectTitle>
+            <ProjectTitle>DivaOS: AI WhatsApp virtual assistant</ProjectTitle>
             <DescRow>
               Architected and built DivaOS on <strong>n8n</strong>, orchestrating{" "}
               <strong>OpenAI</strong>, <strong>Redis</strong>, and internal REST
@@ -191,7 +215,7 @@ export function PortfolioAndFooter() {
 
           <ProjectCard>
             <ProjectTitle>
-              Driven Properties — corporate website & listings
+              Driven Properties: corporate website & listings
             </ProjectTitle>
             <DescRow>
               Contributed to the Driven Properties website with a focus on the
@@ -210,7 +234,7 @@ export function PortfolioAndFooter() {
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectTitle>Smartlist — classified ads platform</ProjectTitle>
+            <ProjectTitle>Smartlist: classified ads platform</ProjectTitle>
             <DescRow>
               High-performance, scalable classified ads: highly normalized
               database design for B2B and B2C, hierarchical categories,
@@ -227,7 +251,7 @@ export function PortfolioAndFooter() {
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectTitle>RCMS — company-wide ERP</ProjectTitle>
+            <ProjectTitle>RCMS: company-wide ERP</ProjectTitle>
             <DescRow>
               Full stack developer on a company-wide ERP: Accounting (invoices,
               bills, receipts, payments, journal entries), HR (onboarding,
@@ -244,12 +268,12 @@ export function PortfolioAndFooter() {
           </ProjectCard>
 
           <ProjectCard>
-            <ProjectTitle>ERP implementation — HR workflows</ProjectTitle>
+            <ProjectTitle>ERP implementation: HR workflows</ProjectTitle>
             <DescRow>
               Spearheaded HR workflows: Employee Master, Purchase Order, Purchase
               Request, Camps Management, and Leaves Management. Vue.js for
               dynamic front-end interactions, PHP Laravel for backend logic, MySQL
-              for storage, and jQuery for client-side interactivity — intuitive
+              for storage, and jQuery for client-side interactivity: intuitive
               interfaces, complex workflow orchestration, and optimized database
               operations.
             </DescRow>

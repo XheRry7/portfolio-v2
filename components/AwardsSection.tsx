@@ -5,12 +5,12 @@ const awards = [
     detail: "Company-wide recognition for outstanding contribution.",
   },
   {
-    title: "Best Performer — September 2025",
+    title: "Best Performer: September 2025",
     org: "Driven Properties",
     detail: "Growth and Innovation Technology Department.",
   },
   {
-    title: "Best Performer — Q1 2023",
+    title: "Best Performer: Q1 2023",
     org: "Cloudtek",
     detail: "Top performance for the first quarter of the year.",
   },
